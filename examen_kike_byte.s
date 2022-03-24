@@ -27,17 +27,17 @@ loop:
 	
 	neg $t2, $t2
 	
-	addi $t2, $t2, 1	#avanzamos en memoria
+	addi $t0, $t0, 1	#avanzamos en memoria
 	addi $t1, $t1, 1
 	j loop
 
 impar:
 	addi $t1, $t1, 1
-	addi $t2, $t2, 1	#avanzamos en memoria
+	addi $t0, $t0, 1	#avanzamos en memoria
 	j loop
 	
 si:	
-	addi $t2, $t2, 1	#avanzamos en memoria
+	addi $t0, $t0, 1	#avanzamos en memoria
 	addi $t1, $t1, 1	#incrementamos i
 	
 	j loop
