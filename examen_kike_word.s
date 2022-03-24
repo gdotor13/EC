@@ -33,11 +33,11 @@ loop:
 
 impar:
 	addi $t1, $t1, 1
-	addi $t2, $t2, 4	#avanzamos en memoria
+	addi $t0, $t0, 4	#avanzamos en memoria
 	j loop
 	
 si:	
-	addi $t2, $t2, 4	#avanzamos en memoria
+	addi $t0, $t0, 4	#avanzamos en memoria
 	addi $t1, $t1, 1	#incrementamos i
 	
 	j loop
